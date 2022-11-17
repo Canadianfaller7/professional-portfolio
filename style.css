@@ -75,7 +75,7 @@ header ul li a:hover {
 
 section.hero {
     background-color:#000;
-    background-image:url(/assets/images/helloWorld.png);
+    background-image:url(/images/helloWorld.png);
     background-repeat:no-repeat;
     background-size:100% auto; 
     background-position:right top;
@@ -158,26 +158,26 @@ div[class^="project"]:nth-child(odd) {
 }
 
 .project-1 { 
-    background-image:url(/assets/images/beerfinder.png);
+    background-image:url(/images/beerfinder.png);
     width:100%;
     height:400px;
     margin-left:0 !important;
 }
 
 .project-2 {
-    background-image:url(/assets/images/weather.png);
+    background-image:url(/images/weather.png);
 }
 
 .project-3 {
-    background-image:url(/assets/images/seo.png);
+    background-image:url(/images/seo.png);
 }
 
 .project-4 {
-    background-image:url(/assets/images/clock.png);
+    background-image:url(/images/clock.png);
 }
 
 .project-5 {
-    background-image:url(/assets/images/quiz.png);
+    background-image:url(/images/quiz.png);
 }
 
 .project-info {
