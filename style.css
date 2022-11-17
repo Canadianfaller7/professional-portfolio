@@ -75,7 +75,7 @@ header ul li a:hover {
 
 section.hero {
     background-color:#000;
-    background-image:url(/images/helloWorld.png);
+    background-image:url(/images/helloworld.png);
     background-repeat:no-repeat;
     background-size:100% auto; 
     background-position:right top;
