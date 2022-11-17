@@ -75,7 +75,7 @@ header ul li a:hover {
 
 section.hero {
     background-color:#000;
-    background-image:url(/images/helloworld.png);
+    background-image:url(./images/helloworld.png);
     background-repeat:no-repeat;
     background-size:100% auto; 
     background-position:right top;
@@ -158,26 +158,26 @@ div[class^="project"]:nth-child(odd) {
 }
 
 .project-1 { 
-    background-image:url(/images/beerfinder.png);
+    background-image:url(./images/beerfinder.png);
     width:100%;
     height:400px;
     margin-left:0 !important;
 }
 
 .project-2 {
-    background-image:url(/images/weather.png);
+    background-image:url(./images/weather.png);
 }
 
 .project-3 {
-    background-image:url(/images/seo.png);
+    background-image:url(./images/seo.png);
 }
 
 .project-4 {
-    background-image:url(/images/clock.png);
+    background-image:url(./images/clock.png);
 }
 
 .project-5 {
-    background-image:url(/images/quiz.png);
+    background-image:url(./images/quiz.png);
 }
 
 .project-info {
@@ -233,7 +233,7 @@ div[class^="project"]:nth-child(odd) {
         height:300px;
     }
     #about img {
-        height: 900px;
+        height: 625px;
     }
 }
 
@@ -280,7 +280,7 @@ div[class^="project"]:nth-child(odd) {
         margin-right:0;
     }
     #about img {
-        height: 550px;
+        height: 375px;
     }
 }
 
@@ -288,15 +288,24 @@ div[class^="project"]:nth-child(odd) {
     header h1 { 
         font-size:2.5rem; 
     }
-    #about img {
-        height: 350px;
-    }
-
     header ul li a {
         font-size:.85rem;
         margin-right:10px;
     }
     #about img {
-        height: 275px;
+        height: 200px;
+    }
+}
+
+@media (max-width:420px) {
+    header h1 { 
+        font-size:2.5rem; 
+    }
+    header ul li a {
+        font-size:.85rem;
+        margin-right:10px;
+    }
+    #about img {
+        height: 150px;
     }
 }
