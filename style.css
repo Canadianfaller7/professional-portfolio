@@ -1,0 +1,302 @@
+:root {
+    --pagemargin:5%;
+    --mint-teal: rgb(9, 248, 248);
+    --dark-grey: rgb(63, 63, 63);
+    --off-grey: rgb(199, 199, 199);
+    --off-white-blue: rgb(232, 252, 255);
+}
+
+body {
+    font-size:18px;
+    font-family:'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    letter-spacing:0.05em; 
+    text-transform:uppercase;
+}
+
+p {
+    line-height:150%;
+}
+
+a {
+    color:#000;
+    transition:color 0.3s ease;
+    font-weight:600;
+}
+
+a:hover {
+    color:var(--mint-teal); 
+    text-decoration:underline;
+} 
+
+/* page-specific styling */
+
+header {
+    background-color:#222;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:0 var(--pagemargin);
+    align-items:center;
+}
+
+header h1 {
+    color:#fff;
+    font-size:5rem;
+    padding:12px 0 0;
+    margin:0;
+}
+
+header ul {
+    margin:0;
+    padding:0;
+    list-style:none; 
+}
+
+header ul li {
+    margin:0 0 0 25px;
+    padding:0;
+    display:inline;
+}
+
+header ul li a { 
+    color:#fff;
+    text-decoration:none;
+    font-size:1.3rem;
+}
+
+header ul li a:hover { 
+    color:rgb(9, 248, 248);
+    text-decoration:underline;
+}
+
+section.hero {
+    background-color:#000;
+    background-image:url(/assets/images/helloWorld.png);
+    background-repeat:no-repeat;
+    background-size:100% auto; 
+    background-position:right top;
+    padding:0 var(--pagemargin);
+    height:386px;
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+section.hero h2 {
+    margin:0;
+    padding:20px 0;
+    color:#999;
+    font-size:2.5rem;
+    font-weight:200;
+}
+
+section.hero h2:hover {
+    color: rgb(9, 248, 248);
+}
+
+#about h3, #work h3, #contact h3 {
+    font-size:2.5rem;
+    font-weight:200;
+    width:100%;
+    border-bottom:2px solid #000;
+}
+
+#about {
+    padding:40px var(--pagemargin);
+}
+
+#about img {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+
+#work {
+    display:flex;
+    direction:row;
+    flex-wrap:wrap;
+    padding:0 var(--pagemargin);
+}
+
+#work a:hover {
+    text-decoration:none;
+    color:#000;
+}
+
+div[class^="project"] {
+    background-size:cover; 
+    background-position:center top;
+    background-repeat:no-repeat;
+    filter: grayscale(100%);
+    transition:filter 0.3s ease;
+    margin-bottom:20px;
+    display:flex;
+    align-items:flex-end;
+}
+div[class^="project"]:hover {
+    filter: grayscale(0);
+    text-decoration:none;
+}
+
+div.project-2, div.project-3, div.project-4, div.project-5 {
+    width:48%;
+    height:200px;
+}
+
+div[class^="project"]:nth-child(even) {
+    margin-left:2%;
+}
+
+div[class^="project"]:nth-child(odd) {
+    margin-left:0;
+    margin-right:2%;
+}
+
+.project-1 { 
+    background-image:url(/assets/images/beerfinder.png);
+    width:100%;
+    height:400px;
+    margin-left:0 !important;
+}
+
+.project-2 {
+    background-image:url(/assets/images/weather.png);
+}
+
+.project-3 {
+    background-image:url(/assets/images/seo.png);
+}
+
+.project-4 {
+    background-image:url(/assets/images/clock.png);
+}
+
+.project-5 {
+    background-image:url(/assets/images/quiz.png);
+}
+
+.project-info {
+    background-color:#000;
+    color:#fff;
+    font-size:1.25rem;
+    padding:8px 20px;
+    width:300px;
+    max-width:100%;
+    overflow-x:hidden;
+    cursor:pointer;
+    flex-direction:column;
+}
+
+.project-info h4, .project-info p {
+    margin:0;
+    padding:0;
+    align-self:flex-start;
+    max-width:100%;
+}
+
+.project-info p { 
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    letter-spacing:0.05em; 
+    text-transform:uppercase;
+    font-weight:200;
+}
+
+#contact {
+    padding:40px var(--pagemargin) 80px;
+    background-color:#000;
+    margin-top:60px;
+}
+
+#contact h3, #contact p, #contact a {
+    color:#fff;
+    text-decoration:none;
+}
+
+#contact a:hover { 
+    color:var(--mint-teal); 
+}
+
+#contact h3{
+    color:#fff;
+    border-bottom:2px solid #fff;
+}
+
+/* screen-specific styles */
+
+@media (min-width:1400px) {
+    section.hero {
+        height:300px;
+    }
+    #about img {
+        height: 900px;
+    }
+}
+
+@media (max-width:1200px) {
+    header h1 { 
+        font-size:4.25rem; 
+    }
+
+    header ul li a {
+        font-size:1.1rem;
+    }
+
+    section.hero {
+        height:260px;
+    }
+}
+
+@media (max-width:1024px) {
+    header {
+        flex-direction:column;  
+    }
+
+    header h1 { 
+        align-self:flex-start;
+    }
+
+    header nav {
+        align-self:flex-start;
+        padding:16px 0;
+    }
+
+    header nav ul li { 
+        margin-left:0; 
+        margin-right:25px;
+    }
+
+    div.project-1, div.project-2, div.project-3, div.project-4, div.project-5 {
+        width:100%;
+        height:180px;
+    }
+    
+    div[class^="project"]:nth-child(even), div[class^="project"]:nth-child(odd) {
+        margin-left:0;
+        margin-right:0;
+    }
+    #about img {
+        height: 550px;
+    }
+}
+
+@media (max-width:480px) {
+    header h1 { 
+        font-size:2.5rem; 
+    }
+    #about img {
+        height: 350px;
+    }
+
+    header ul li a {
+        font-size:.85rem;
+        margin-right:10px;
+    }
+    #about img {
+        height: 275px;
+    }
+}
