@@ -197,7 +197,7 @@ div[class^="project"]:nth-child(odd) {
     background-image:url(./images/search.png);
 }
 
-. project-10 {
+.project-10 {
     background-image:url(./images/todo.png);
 }
 .project-info {
