@@ -144,7 +144,7 @@ div[class^="project"]:hover {
 }
 
 div.project-2, div.project-3, div.project-4, div.project-5, 
-div.project-6, div.project-7, div.project-8, div.project-9{
+div.project-6, div.project-7, div.project-8, div.project-9, div.project-10{
     width:48%;
     height:200px;
 }
@@ -197,6 +197,9 @@ div[class^="project"]:nth-child(odd) {
     background-image:url(./images/search.png);
 }
 
+. project-10 {
+    background-image:url(./images/todo.png);
+}
 .project-info {
     background-color:#000;
     color:#fff;
@@ -288,7 +291,7 @@ div[class^="project"]:nth-child(odd) {
     }
 
     div.project-1, div.project-2, div.project-3, div.project-4, div.project-5, 
-    div.project-6, div.project-7, div.project-8, div.project-9{
+    div.project-6, div.project-7, div.project-8, div.project-9, div.project-10{
         width:100%;
         height:180px;
     }
